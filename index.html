@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈 Rafli Personal Blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/jpeg">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Inter (Body) & Playfair Display (Headings) for a classy minimalist look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* --- Minimalist Theme Overrides --- */
+        :root {
+            --bs-body-font-family: 'Inter', sans-serif;
+            --accent-color: #212529; /* Dark Gray/Black */
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #6c757d;
+        }
+
+        /* Navbar Tweaks */
+        .navbar {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            background-color: #fff !important;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #333 !important;
+        }
+
+        /* Layout Utilities */
+        .section-padding {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        /* Blog Post Styling */
+        .blog-post {
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .blog-post-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-post-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .read-more-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid #333;
+            padding-bottom: 2px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-widget {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 4px; /* Slight rounding, not full circle */
+        }
+
+        .sidebar-title {
+            font-size: 1.2rem;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Custom Button Style */
+        .btn-minimal {
+            background-color: #212529;
+            color: #fff;
+            border-radius: 0;
+            padding: 10px 25px;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        
+        .btn-minimal:hover {
+            background-color: #495057;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #eee;
+            padding: 3rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-4 d-flex align-items-center gap-2" href="#">
+                <img src="logo.png" alt="Logo" style="width:32px;height:32px;object-fit:cover;border-radius:50%;">
+                My Personal Blog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="old-projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testament.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container section-padding">
+        <div class="row">
+            
+            <!-- Left Column: Blog Posts (8 cols wide on large screens) -->
+            <div class="col-lg-8">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <h2 class="blog-post-title"><a href="#">About this Blog</a></h2>
+                    <h2 class="blog-post-title"><a href="#">关于博格</a></h2>
+                    <span class="blog-post-meta">June 10, 2026 by <a href="#">Rafli</a></span>
+                    <p>Welcome to my personal blog—this is where I share projects, web development notes, and small experiments. If you like clean UI and practical learning, you’re in the right place.</p>
+                    <p>欢迎来到我的个人博客！我会在这里分享我的项目、网站开发学习笔记，以及一些小实验。喜欢简洁的界面、实用的代码和贴近实际的学习方式，欢迎一起交流。</p>
+                    <a href="#" class="read-more-link">Continue Reading &rarr;</a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <h2 class="blog-post-title"><a href="#">My Journey into Web Development and E-commerce</a></h2>
+                    <h2 class="blog-post-title"><a href="#">我对网站开发与电商之路</a></h2>
+                    <span class="blog-post-meta">June 10, 2026 by <a href="#">Rafli</a></span>
+                    <p>I’m learning by building—designing simple pages, improving UI details, and turning ideas into real projects. This space is my progress log.</p>
+                    <p>我通过实践来学习：做简洁的页面、优化UI细节，把想法变成真实项目。这里会记录我的成长过程。</p>
+                    <a href="#" class="read-more-link">Continue Reading &rarr;</a>
+                </article>
+
+                <!-- Pagination -->
+                <nav class="blog-pagination" aria-label="Pagination">
+                    <a class="btn btn-minimal" href="old-projects.html">旧项目</a>
+                    <a class="btn btn-outline-secondary ms-2" href="new-projects.html">目前/新项目</a>
+                </nav>
+
+            </div>
+
+            <!-- Right Column: Sidebar (4 cols wide) -->
+            <div class="col-lg-4">
+                
+                <div id="about"></div>
+
+                <!-- Widget: About Me -->
+                <div class="sidebar-widget">
+                    <h5 class="sidebar-title">About Me 关于我</h5>
+                    <p class="mb-3">I’m an Indonesian student studying in China. I enjoy building clean, responsive websites, exploring UI/UX, and learning step by step through real projects.</p>
+                    <p class="mb-3">我是印尼学生，目前在中国学习。我喜欢做简洁、响应式的网站界面，研究UI/UX，也通过真实项目一步一步提升自己。</p>
+                    <img src="me.jpg" class="img-fluid rounded-circle mb-3" alt="Profile Picture" style="width: 70px; height: 70px; object-fit: cover;">
+                    <a target="_blank" href="CV.pdf" class="btn btn-sm btn-outline-dark w-100">Read More 查看更多</a>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h5 class="sidebar-title">Skills 技能</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Mandarin 中文</a></li>
+                        <li class="mb-2"><a href="#">English 英文</a></li>
+                        <li class="mb-2"><a href="#">Programming 编程</a></li>
+                        <li class="mb-2"><a href="#">Design 设计</a></li>
+                        <li class="mb-2"><a href="#">Finance 金融</a></li>
+                    </ul>
+                </div>
+
+                <!-- Widget: Follow -->
+                <div class="sidebar-widget">
+                    <h5 class="sidebar-title">Follow</h5>
+                    <p class="small">Stay connected: 保持联系</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item me-2"><a href="https://x.com/Raflee99" target="_blank" rel="noopener noreferrer">X (Twitter)<i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="list-inline-item me-2"><a href="https://www.instagram.com/rfly.rmdhny/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/rafli-ramdhany-2506181a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2026 My Personal Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
